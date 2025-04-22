@@ -2,7 +2,6 @@
 import { motion } from "motion/react";
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { PlaceholdersAndVanishInput } from "./ui/placeholders-and-vanish-input";
-// import Image from "next/image";
 
 export function HeroSectionOne() {
   const placeholders = [
@@ -36,7 +35,7 @@ export function HeroSectionOne() {
       </div>
       <div className="px-4 py-10 md:py-20">
         <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
-          {"Simple and Mordern way to Authenticate your users"
+          {"Simple and Modern way to Authenticate your users"
             .split(" ")
             .map((word, index) => (
               <motion.span
@@ -104,31 +103,6 @@ export function HeroSectionOne() {
             Github Repo
           </button>
         </motion.div>
-        {/* <motion.div
-          initial={{
-            opacity: 0,
-            y: 10,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.3,
-            delay: 1.2,
-          }}
-          className="relative z-10 mt-20 rounded-3xl border border-neutral-200 bg-neutral-100 p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900"
-        >
-          <div className="w-full overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700">
-            <Image
-              src="/hero.png"
-              alt="hero"
-              className="aspect-[16/9] h-auto w-full object-cover"
-              width={1000}
-              height={1000}
-            />
-          </div>
-        </motion.div> */}
       </div>
     </div>
   );
